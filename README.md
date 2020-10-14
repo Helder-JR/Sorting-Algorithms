@@ -1,2 +1,2 @@
-# Sorting-Algorithms
-Sorting algorithms developed using Java, for educational purposes and because of Java OO easiness.
+# Sorting Algorithms
+Sorting algorithms developed using Java, for educational purposes and due to Java OO easiness.
