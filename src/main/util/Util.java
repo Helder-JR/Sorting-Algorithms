@@ -48,15 +48,24 @@ public abstract class Util
     public static <T extends Comparable<T>> int minimum(T[] array)
     {
         int minimum = 0;
-
+        
         for (int i = 1; i < array.length; i++)
             if (array[i].compareTo(array[minimum]) < 0)
-                minimum = i;
+            minimum = i;
         
-        return minimum;
-    }
-
-    public <T extends Comparable<T>> boolean isValid(T[] array, int leftIndex, int rightIndex)
+            return minimum;
+        }
+        
+    /**
+     * Verifies if an array is valid to be sorted.
+     * 
+     * @param <T> the array type;
+     * @param array the array to be verified
+     * @param leftIndex the leftmost index of the array.
+     * @param rightIndex the rightmost index of the array.
+     * @return a boolean {@code true} in case of the array being valid or {@code false} otherwise.
+     */
+    public static <T extends Comparable<T>> boolean isValid(T[] array, int leftIndex, int rightIndex)
     {
         return (array.length > 0 && leftIndex >= 0 && leftIndex < rightIndex);  
     }
