@@ -55,4 +55,9 @@ public abstract class Util
         
         return minimum;
     }
+
+    public <T extends Comparable<T>> boolean isValid(T[] array, int leftIndex, int rightIndex)
+    {
+        return (array.length > 0 && leftIndex >= 0 && leftIndex < rightIndex);  
+    }
 }
