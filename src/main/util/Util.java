@@ -57,7 +57,9 @@ public abstract class Util
         }
         
     /**
-     * Verifies if an array is valid to be sorted.
+     * Verifies if an array is valid to be sorted. To be considered valid, an array must have a size
+     * bigger than one (because a unique element array is already sorted), not null, with its left
+     * index being at least zero and smaller than the right index.
      * 
      * @param <T> the array type;
      * @param array the array to be verified
@@ -67,6 +69,6 @@ public abstract class Util
      */
     public static <T extends Comparable<T>> boolean isValid(T[] array, int leftIndex, int rightIndex)
     {
-        return (array.length > 0 && leftIndex >= 0 && leftIndex < rightIndex);  
+        return (array != null && array.length > 1 && leftIndex >= 0 && leftIndex < rightIndex);  
     }
 }
