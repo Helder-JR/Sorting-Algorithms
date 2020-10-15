@@ -75,7 +75,7 @@ public abstract class Util
 	}
 
 	/**
-	 * Creates a copy of a array.
+	 * Creates a copy of an array.
 	 * 
 	 * @param <T> the original array type.
 	 * @param array the array to be copied.
