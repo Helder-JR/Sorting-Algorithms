@@ -1,5 +1,7 @@
 package main.util;
 
+import java.util.Arrays;
+
 /**
  * Class that includes some common use methods, used in the sorting algorithms.
  */
@@ -70,5 +72,10 @@ public abstract class Util
 	public static <T extends Comparable<T>> boolean isValid(T[] array, int leftIndex, int rightIndex)
 	{
 		return (array != null && array.length > 1 && leftIndex >= 0 && leftIndex < rightIndex);  
+	}
+
+	public static <T extends Comparable<T>> T[] arrayCopy(T[] array)
+	{
+		return Arrays.copyOf(array, array.length);
 	}
 }

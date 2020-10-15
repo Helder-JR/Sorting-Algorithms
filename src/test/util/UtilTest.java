@@ -1,7 +1,5 @@
 package test.util;
 
-import static org.junit.Assert.assertTrue;
-
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -33,6 +31,14 @@ public class UtilTest
 	@Test
 	public void testIsValidArray()
 	{
-		assertTrue(Util.isValid(array, 0, array.length - 1));
+		Assert.assertTrue(Util.isValid(array, 0, array.length - 1));
+	}
+
+	@Test
+	public void testArrayCopy()
+	{
+		Integer[] copy = Util.arrayCopy(array);
+
+		Assert.assertArrayEquals(array, copy);
 	}
 }
