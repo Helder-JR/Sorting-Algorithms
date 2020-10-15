@@ -74,6 +74,13 @@ public abstract class Util
 		return (array != null && array.length > 1 && leftIndex >= 0 && leftIndex < rightIndex);  
 	}
 
+	/**
+	 * Creates a copy of a array.
+	 * 
+	 * @param <T> the original array type.
+	 * @param array the array to be copied.
+	 * @return a full copy of the original array.
+	 */
 	public static <T extends Comparable<T>> T[] arrayCopy(T[] array)
 	{
 		return Arrays.copyOf(array, array.length);
