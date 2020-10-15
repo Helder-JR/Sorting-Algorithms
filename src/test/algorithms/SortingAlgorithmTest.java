@@ -43,7 +43,7 @@ public class SortingAlgorithmTest
      */
     private void getImplementation()
     {
-        this.implementation = new CountingSort();
+        this.implementation = null;
     }
 
     /**
