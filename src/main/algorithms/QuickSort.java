@@ -7,6 +7,19 @@ public class QuickSort<T extends Comparable<T>> extends AbstractSorting<T>
 {
 	private int getPivot(T[] array, int leftIndex, int rightIndex)
 	{
+		int middleIndex = (leftIndex + rightIndex) >> 1;
+
+		if (array[leftIndex].compareTo(array[middleIndex]) > 0)
+			swap(array, leftIndex, rightIndex);
+
+		if (array[leftIndex].compareTo(array[rightIndex]) > 0)
+			swap(array, middleIndex, leftIndex);
+			
+		if (array[middleIndex].compareTo(array[rightIndex]) > 0)
+			swap(array, middleIndex, rightIndex);
+
+		swap(array, leftIndex, middleIndex);
+
 		return leftIndex;
 	}
 
