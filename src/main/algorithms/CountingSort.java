@@ -5,8 +5,9 @@ import static main.util.Util.*;
 
 /**
  * Class responsible for implementing the sort method from {@link AbstractSorting}
- * using the Counting Sort algorithm. This algorithm consider only integer values 
- * from 0 to k (the biggest element in the array), where repetitions are allowed.
+ * using the Counting Sort algorithm. This algorithm consider integer values from 
+ * n to p (the smallest and biggest elements in the array), and repetitions are 
+ * allowed.
  * 
  * @see https://pt.wikipedia.org/wiki/Counting_sort
  */
