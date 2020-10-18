@@ -12,8 +12,8 @@ public abstract class Util
 	 * 
 	 * @param <T> the array type.
 	 * @param array the array that contains the elements to be swapped.
-	 * @param first the element that will be swapped.
-	 * @param second the other element that will be swapped.
+	 * @param first the element index that will be swapped.
+	 * @param second the other element index that will be swapped.
 	 */
 	public static <T> void swap(T[] array, int first, int second)
 	{
@@ -71,7 +71,7 @@ public abstract class Util
 	 */
 	public static <T extends Comparable<T>> boolean isValid(T[] array, int leftIndex, int rightIndex)
 	{
-		return (array != null && array.length > 1 && leftIndex >= 0 && leftIndex < rightIndex);  
+		return (array != null && array.length > 1 && leftIndex >= 0 && rightIndex > 0 && leftIndex < rightIndex);
 	}
 
 	/**
