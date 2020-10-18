@@ -61,7 +61,8 @@ public abstract class Util
 	/**
 	 * Verifies if an array is valid to be sorted. To be considered valid, an array must have a size
 	 * bigger than one (because a unique element array is already sorted), not null, with its left
-	 * index being at least zero and smaller than the right index.
+	 * index being at least zero, its right index being bigger than zero, and its left index being 
+	 * smaller than the right index.
 	 * 
 	 * @param <T> the array type;
 	 * @param array the array to be verified
